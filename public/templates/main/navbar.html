@@ -1,0 +1,55 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand glyphicon glyphicon-home" style="color:#FFF;" href="#"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#course" >Cours</a></li>
+                <li><a href="#quiz" >Quiz</a></li>
+                <li><a id="menuConv" data-target="#conv">Conversion</a></li>
+                <li><a href="#aboutUs" >A propos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <!--<li><a id="menuCreateAccount" href="#createAccount" data-toggle="modal" data-target="#createAccount"><span class="glyphicon glyphicon glyphicon-user"></span>  Créer un compte</a></li>
+                <li><a id="menuLogin" href="#connect" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>   Se connecter</a></li>-->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<script>
+ $(document).ready(function(){
+     $('#menuConv').click(function(){
+         //$('#menuConv').append('data-toggle="modal"');
+            var url = window.location.href.split("#")[1];
+            url = '#' + url;
+            switch (url){
+            case "#quiz":
+            case "#bindecquiz":
+            case "#binlogquiz":
+            case "#binSumSubquiz":
+            case "#binMultDivquiz":
+            case "#hexdecquiz":
+            case "#hexbinquiz":
+            case "#game":
+            case "#bingame":
+                $('#convAlert').modal('show');  // do not allow using Converter
+                $('#modal-id-infos').html('<p>Vous n\'avez pas le droit d\'appeler le convertisseur.</p>');
+                break;
+            default:
+                $('#conv').modal('show');  // allow using Converter
+            break;
+          }
+     });
+ });
+</script>

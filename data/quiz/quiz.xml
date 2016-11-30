@@ -1,0 +1,574 @@
+<quiz>
+    <part class="bindec"><!--Binaire à décimal-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask= "Un groupement de 8 bits s'appelle : ">
+                    <answer>une brochette</answer>
+                    <answer>un quintet</answer>
+                    <answer check="true">un octet</answer>
+                </question>
+
+                <question ask="En écriture binaire on utilise les symboles :">
+                    <answer>-1 et 1</answer>
+                    <answer check = "true">0 et 1</answer>
+                    <answer>1 et 2</answer>
+                    <answer>2 et 0</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask="Comment écrit-on en système binaire « 4 » ?">
+                    <answer>110</answer>
+                    <answer>101</answer>
+                    <answer check="true">100</answer>
+                    <answer>111</answer>
+                </question>
+
+                <question ask="Quelle est la plus grande valeur qu'on puisse écrire avec 8 bits ?">
+                    <answer>8</answer>
+                    <answer>16</answer>
+                    <answer check="true">255</answer>
+                    <answer>256</answer>
+                </question>
+
+                <question ask="Que vaut 2 exposant 10 ?">
+                    <answer check="true">1024</answer>
+                    <answer>256</answer>
+                    <answer>1000</answer>
+                    <answer>65536</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask="Comment on s'écrit 11101010 en décimal ?">
+                    <answer>189</answer>
+                    <answer>237</answer>
+                    <answer>208</answer>
+                    <answer check="true">234</answer>
+                    <answer>258</answer>
+                </question>
+
+                <question ask="Convertir en décimal la valeur du code binaire 0000 1010(2) ?">
+                    <answer check="true">10</answer>
+                    <answer>4</answer>
+                    <answer>6</answer>
+                    <answer>8</answer>
+                    <answer>1</answer>
+                </question>
+            </subLevel>
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask="Combien fait 10 en base 2, quand on le convertit en base 10 ?">
+                    <answer>1</answer>
+                    <answer check="true">2</answer>
+                    <answer>10</answer>
+                    <answer>20</answer>
+                </question>
+
+                <question ask="Le nombre 1011 écrit en binaire vaut en écriture décimale :">
+                    <answer>3</answer>
+                    <answer>13</answer>
+                    <answer check="true">11</answer>
+                    <answer>6</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="5"><!--Sub level 5-->
+                <question ask="A quel nombre correspond la combinaison '1110000101' en décimal ?">
+                    <answer>337</answer>
+                    <answer>741</answer>
+                    <answer check="true">901</answer>
+                    <answer>385</answer>
+                    <answer>903</answer>
+                </question>
+
+                <question ask="A quel nombre correspond la combinaison '100101101' en décimal ?">
+                    <answer check="true">301</answer>
+                    <answer>12A</answer>
+                    <answer>303</answer>
+                    <answer>300</answer>
+                    <answer>168</answer>
+                </question>
+
+                <question ask="En binaire, 1234 s'écrit :">
+                    <answer>10100001111100011110</answer>
+                    <answer>111111111111111111110000001110101010000111110</answer>
+                    <answer>101000000011111101101010000111</answer>
+                    <answer>10011111010</answer>
+                    <answer check="true">10011010010</answer>
+                </question>
+            </subLevel>
+        </questions>
+    </part>
+    <part class="hexbin"><!--Hexadécimal à décimal-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask= "Dans le système hexadécimal, quel symbole n'est pas utilisé ?">
+                    <answer>0</answer>
+                    <answer check="true">G</answer>
+                    <answer>F</answer>
+                    <answer>9</answer>
+                </question>
+
+                <question ask= "Un chiffre hexadécimal est représenté par combien de chiffres (bits) binaires ?">
+                    <answer>2</answer>
+                    <answer check="true">4</answer>
+                    <answer>1</answer>
+                    <answer>8</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask= "Quel nombre parmi ces quatre nombres a la même valeur en hexadécimal et en binaire">
+                    <answer check="true">01</answer>
+                    <answer>10</answer>
+                    <answer>11</answer>
+                    <answer>A1</answer>
+                </question>
+
+                <question ask="Comment le code hexadécimal 35 s'écrit-il en binaire ?">
+                    <answer>100011</answer>
+                    <answer check="true">110101</answer>
+                    <answer>10110101</answer>
+                    <answer>110000</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask= "Comment le code binaire 0000 1111 s'écrit-il en hexadécimal ?">
+                    <answer>01</answer>
+                    <answer check="true">0F</answer>
+                    <answer>10</answer>
+                    <answer>FF</answer>
+                </question>
+
+                <question ask= "Le nombre binaire 0001 1111 s'écrit en hexadécimal :">
+                    <answer check="true">1F</answer>
+                    <answer>F1</answer>
+                    <answer>1A</answer>
+                    <answer>A1</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask= "Le nombre hexadécimal A1 s'écrit en binaire :">
+                    <answer>1001 0001</answer>
+                    <answer>1011 0001</answer>
+                    <answer>1001 0010</answer>
+                    <answer check="true">1010 0001</answer>
+                </question>
+
+                <question ask= "Le nombre binaire 1100 1011 s'écrit en hexadécimal :">
+                    <answer>BC</answer>
+                    <answer check="true">CB</answer>
+                    <answer>205</answer>
+                    <answer>C0</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="5"><!--Sub level 5-->
+                <question ask= "Le nombre hexadécimal FCB1 s'écrit en binaire :">
+                    <answer check="true">1111 1100 1011 0001</answer>
+                    <answer>0001 1111 1100 1011</answer>
+                    <answer>0001 1111 1011 1100</answer>
+                    <answer>1100 0001 0001 1100</answer>
+                </question>
+
+                <question ask= "Le nombre binaire 1111 1100 1011 s'écrit en hexadécimal :">
+                    <answer>FBC</answer>
+                    <answer>CFB</answer>
+                    <answer check="true">FCB</answer>
+                    <answer>BCF</answer>
+                </question>
+            </subLevel>
+        </questions>
+    </part>
+    <part class="hexdec"><!--Hexadecimal à binaire-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask="Pour écrire les nombres dans le système de numération hexadécimal on utilise : ">
+                    <answer>2 symboles</answer>
+                    <answer>12 symboles</answer>
+                    <answer check="true">16 symboles</answer>
+                    <answer>10 symboles</answer>
+                </question>
+
+                <question ask="Un chiffre hexadécimal correspond à un nombre binaire de :">
+                    <answer>2 chiffres</answer>
+                    <answer check="true">4 chiffres</answer>
+                    <answer>6 chiffres</answer>
+                    <answer>8 chiffres</answer>
+                </question>
+
+                <question ask="Pour écrire la valeur représentée par un octet en binaire il faut :">
+                    <answer check="true">2 chiffres en écriture hexadécimale</answer>
+                    <answer>4 chiffres en écriture hexadécimale</answer>
+                    <answer>6 chiffres en écriture hexadécimale</answer>
+                    <answer>8 chiffres en écriture hexadécimale</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask="En hexadécimal, ces deux nombres 1AF et 1af sont égaux ?">
+                    <answer check="true">Oui</answer>
+                    <answer>Non</answer>
+                </question>
+
+                <question ask="En hexadécimal, ces deux nombres 0FCB et FCB sont égaux ?">
+                    <answer check="true">Oui</answer>
+                    <answer>Non</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask="En hexadécimal, le nombre qui suit après le nombre 10 est :">
+                    <answer check="true">11</answer>
+                    <answer>1A</answer>
+                    <answer>A1</answer>
+                    <answer>B</answer>
+                </question>
+
+                <question ask="Le nombre hexadécimal F s'écrit en décimal :">
+                    <answer>11</answer>
+                    <answer>16</answer>
+                    <answer check="true">15</answer>
+                    <answer>17</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask="Que vaut le code hexadécimal A0 ?">
+                    <answer>10</answer>
+                    <answer>100</answer>
+                    <answer check="true">160</answer>
+                    <answer>256</answer>
+                </question>
+
+                <question ask="Le nombre hexadécimal 10 s'écrit en décimal :">
+                    <answer check="true">16</answer>
+                    <answer>A</answer>
+                    <answer>F</answer>
+                    <answer>10</answer>
+                </question>
+
+                <question ask="Le nombre décimal 11 s'écrit en hexadécimal :">
+                    <answer>A</answer>
+                    <answer>10</answer>
+                    <answer check="true">B</answer>
+                    <answer>11</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="5"><!--Sub level 5-->
+                <question ask="Comment écrit-on 15(décimal) en hexadécimal ?">
+                    <answer>1</answer>
+                    <answer check = "true">F</answer>
+                    <answer>10</answer>
+                    <answer>16</answer>
+                    <answer>1F</answer>
+                </question>
+
+                <question ask="Pour convertir 111 en hexadécimal à décimal :">
+                    <answer>(1*16)+ (1*16) + (1*16)</answer>
+                    <answer check="true">(1*16^1)+ (1*16^2) + (1*16^3)</answer>
+                    <answer>16*16*16</answer>
+                    <answer>16*100 + 16*10 + 16</answer>
+                </question>
+
+            </subLevel>
+        </questions>
+    </part>
+    <part class="logic"><!--Hexadecimal à binaire-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask="Quelle fonction logique représente cette table de vérité ? ">
+                    <img>/quizImg/TblV_Xor.png</img>
+                    <answer>ET</answer>
+                    <answer>OU</answer>
+                    <answer check="true">OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+
+                <question ask="Quelle fonction logique représente cette table de vérité ? ">
+                    <img>/quizImg/TblV_Or.png</img>
+                    <answer>ET</answer>
+                    <answer check="true">OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask="Quelle fonction logique représente cette table de vérité ? ">
+                    <img>/quizImg/TblV_NOr.png</img>
+                    <answer>ET</answer>
+                    <answer>OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer check="true">NON-OU</answer>
+                </question>
+
+                <question ask="Quelle fonction logique représente cette table de vérité ? ">
+                    <img>/quizImg/TblV_And.png</img>
+                    <answer check="true">ET</answer>
+                    <answer>OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask="Quelle fonction logique représente cette table de vérité ? ">
+                    <img>/quizImg/TblV_NAnd.png</img>
+                    <answer>ET</answer>
+                    <answer>OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer check="true">NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+
+                <question ask="Quelle fonction logique est illustrée par ce schéma ?">
+                    <img>/quizImg/illus_Or.jpg</img>
+                    <answer>ET</answer>
+                    <answer check="true">OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask="Quelle fonction logique est illustrée par ce schéma ?">
+                    <img>/quizImg/illus_And.jpg</img>
+                    <answer check="true">ET</answer>
+                    <answer>OU</answer>
+                    <answer>OU Exclusif</answer>
+                    <answer>NON-ET</answer>
+                    <answer>NON-OU</answer>
+                </question>
+
+                <question ask="Parmi les cinq équations proposées, quelle est celle qui correspond au schéma ci-dessus ?">
+                    <img>/quizImg/illus_And_Or.jpg</img>
+                    <answer>S = A ou B</answer>
+                    <answer>S = A et B</answer>
+                    <answer>S = ( A et B) ou pas C</answer>
+                    <answer check="true">S = A et (B ou C)</answer>
+                    <answer>S = (A et B) ou (Pas A et C)</answer>
+                </question>
+            </subLevel>
+        </questions>
+    </part>
+    <part class="SubSum"> <!--Addition et soustraction en binaire-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask="Le résultat de cette addition '1 + 1' en binaire : ">
+                    <answer check="true">10</answer>
+                    <answer>2</answer>
+                    <answer>01</answer>
+                    <answer>11</answer>
+                </question>
+
+                <question ask="Le résultat de cette addition '01 + 10' en binaire : ">
+                    <answer>101</answer>
+                    <answer>100</answer>
+                    <answer check="true">11</answer>
+                    <answer>01</answer>
+                </question>
+
+                <question ask="Le résultat de cette soustraction '10 - 1' en binaire : ">
+                    <answer check="true">1</answer>
+                    <answer>11</answer>
+                    <answer>10</answer>
+                    <answer>100</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask="Le résultat de cette addition '1110 - 10' en binaire : ">
+                    <answer>10</answer>
+                    <answer check="true">1100</answer>
+                    <answer>101</answer>
+                    <answer>1000</answer>
+                </question>
+
+                <question ask="Le résultat de cette soustraction '1101 - 11' en binaire : ">
+                    <answer>0101</answer>
+                    <answer check="true">1010</answer>
+                    <answer>10</answer>
+                    <answer>1100</answer>
+                </question>
+
+                <question ask="Le résultat de cette addition '1011 + 1001' en binaire : ">
+                    <answer check="true">10100</answer>
+                    <answer>10101</answer>
+                    <answer>10000</answer>
+                    <answer>11100</answer>
+                </question>
+
+                <question ask="Le résultat de cette addition '10010 + 1110' en binaire : ">
+                    <answer>100110</answer>
+                    <answer>100001</answer>
+                    <answer check="true">100000</answer>
+                    <answer>100011</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask="Le résultat de cette soustraction '101 - 11' en binaire : ">
+                    <answer>100</answer>
+                    <answer>01</answer>
+                    <answer check="true">10</answer>
+                    <answer>11</answer>
+                </question>
+
+                <question ask="Le résultat de cette addition '11111 + 10101' en binaire : ">
+                    <answer>100000</answer>
+                    <answer>111100</answer>
+                    <answer check="true">110100</answer>
+                    <answer>110101</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask="Le résultat de cette addition '111000 + 100110' en binaire : ">
+                    <answer check="true">1011110</answer>
+                    <answer>1011100</answer>
+                    <answer>1010110</answer>
+                    <answer>1111110</answer>
+                </question>
+
+                <question ask="Le résultat de cette soustraction '110 - 10' en binaire : ">
+                    <answer check="true">100</answer>
+                    <answer>1000</answer>
+                    <answer>10</answer>
+                    <answer>01</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="5"><!--Sub level 5-->
+                <question ask="Le résultat de cette addition '10101110 + 100111' en binaire : ">
+                    <answer>11110101</answer>
+                    <answer>11010000</answer>
+                    <answer>11011101</answer>
+                    <answer check="true">11010101</answer>
+                </question>
+
+                <question ask="Le résultat de cette soustraction '10001 - 100' en binaire : ">
+                    <answer>1000</answer>
+                    <answer>10</answer>
+                    <answer>110</answer>
+                    <answer check="true">1101</answer>
+                </question>
+            </subLevel>
+        </questions>
+    </part>
+    <part class="MultDiv"> <!--Multiplication et division-->
+        <questions>
+            <subLevel lvl="1"><!--Sub level 1-->
+                <question ask="Le résultat de cette multiplication '10 x 10' en binaire : ">
+                    <answer check="true">100</answer>
+                    <answer>10</answer>
+                    <answer>11</answer>
+                    <answer>110</answer>
+                </question>
+
+                <question ask="Le résultat de cette division '100101 / 01' en binaire : ">
+                    <answer>11001</answer>
+                    <answer>10010</answer>
+                    <answer check="true">100101</answer>
+                    <answer>100111</answer>
+                </question>
+
+                <question ask="Le résultat de cette division '01 x 01' en binaire : ">
+                    <answer>10</answer>
+                    <answer check="true">01</answer>
+                    <answer>00</answer>
+                    <answer>11</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="2"><!--Sub level 2-->
+                <question ask="Le résultat de cette division '01 / 01' en binaire : ">
+                    <answer check="true">01</answer>
+                    <answer>10</answer>
+                    <answer>01 (retenue : 01)</answer>
+                    <answer>00</answer>
+                </question>
+
+
+                <question ask="Le résultat de cette multiplication '10 x 01' en binaire : ">
+                    <answer>11</answer>
+                    <answer check="true">10</answer>
+                    <answer>01</answer>
+                    <answer>0101</answer>
+                </question>
+
+                <question ask="Le résultat de cette division '11 x 11' en binaire : ">
+                    <answer>101</answer>
+                    <answer>110</answer>
+                    <answer>1100</answer>
+                    <answer check="true">111</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="3"><!--Sub level 3-->
+                <question ask="Le résultat de cette division '100 / 10' en binaire : ">
+                    <answer check="true">10</answer>
+                    <answer>01</answer>
+                    <answer>11</answer>
+                    <answer>100</answer>
+                </question>
+
+
+                <question ask="Le résultat de cette multiplication '100 x 11' en binaire : ">
+                    <answer check="true">1100</answer>
+                    <answer>1110</answer>
+                    <answer>110</answer>
+                    <answer>1001</answer>
+                </question>
+
+                <question ask="Le résultat de cette multiplication '101 x 10' en binaire : ">
+                    <answer>0101</answer>
+                    <answer>1100</answer>
+                    <answer check="true">1010</answer>
+                    <answer>1011</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="4"><!--Sub level 4-->
+                <question ask="Le résultat de cette division '10111 / 10' en binaire : ">
+                    <answer>1010 (retenue : 1)</answer>
+                    <answer>10</answer>
+                    <answer check="true">1011 (retenue : 1)</answer>
+                    <answer>1011</answer>
+                </question>
+
+                <question ask="Le résultat de cette division '111 / 11' en binaire : ">
+                    <answer>10 (retenue : 10)</answer>
+                    <answer>10</answer>
+                    <answer check="true">10 (retenue : 1)</answer>
+                    <answer>01</answer>
+                </question>
+            </subLevel>
+
+            <subLevel lvl="5"><!--Sub level 5-->
+                <question ask="Le résultat de cette multiplication '1011 x 11' en binaire : ">
+                    <answer>100101</answer>
+                    <answer check="true">100001</answer>
+                    <answer>1101</answer>
+                    <answer>1101</answer>
+                </question>
+
+                <question ask="Le résultat de cette division '1010 / 101' en binaire : ">
+                    <answer>10 (retenue : 10)</answer>
+                    <answer check="true">10</answer>
+                    <answer>10 (retenue : 1)</answer>
+                    <answer>01</answer>
+                </question>
+            </subLevel>
+        </questions>
+    </part>
+
+</quiz>

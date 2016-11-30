@@ -1,0 +1,40 @@
+<div class="modal fade modal-mid-size" id="conv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="description">
+                    <div class="form-title">Convertir</div>
+                </div>
+            </div>
+
+
+            <form role="form" action="" method="post" class="conv-form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Binaire</span>
+                        <label class="sr-only" for="convBin">Binaire</label>
+                        <input class= "form-control center-form-input" type="text" name="form-conveBin" placeholder="Entrez un nombre en binaire" class="form-username form-control" id="convBin">
+                    </div>
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Décimal</span>
+                        <label class="sr-only" for="convDec">Décimal</label>
+                        <input class= "form-control center-form-input" type="text" name="form-convDec" placeholder="Entrez un nombre en décimal" class="form-username form-control" id="convDec">
+                    </div>
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Hexadécimal</span>
+                        <label class="sr-only" for="convHex">Hexadécimal</label>
+                        <input class= "form-control center-form-input" type="text" name="form-convHex" placeholder="Entrez un nombre en hexadécimal" class="form-password form-control" id="convHex">
+                    </div>
+                    <div id="conv-alert-area"></div>
+                </div>
+            </form>
+            <div class="modal-footer" align="center">
+                <button type="button" class="btn btn-default" id="btn-reinitialize">Effacer</button>
+                <button type="button" class="btn btn-primary" id="btn-conv">Convertir</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

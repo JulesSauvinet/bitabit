@@ -1,0 +1,310 @@
+<a name="topBinMultDiv"></a>
+<div id ="bindecmd" class ="transparent-course-name"></div>
+
+<h1> La multiplication et la division en binaire </h1>
+<h2>La multiplication</h2>
+<p>Les règles de calcul de la multiplication binaire sont pratiquement les mêmes qu'en décimal :
+    <ul>
+        <li>0 x 0 = 0</li>
+        <li>0 x 1 = 0</li>
+        <li>1 x 0 = 0</li>
+        <li>1 x 1 = 1</li>
+    </ul>
+    Des méthodes permettent de faciliter les calculs multiplicatifs en binaire. Deux méthodes seront présentées ci-dessous:
+</p>
+
+<b>Méthode 1 : </b>
+<p>La première méthode consiste à décomposer la multiplication en une série d'addition.
+Pour cela, considéront un multiplicateur M<SUB>1</SUB> = A<SUB>0</SUB>...A<SUB>M</SUB> à M+1 bits et un multiplicande M<SUB>2</SUB> = B<SUB>0</SUB>...B<SUB>N</SUB> à N+1 bits.
+    <ul>
+        <li> Si le bit à la position i du multiplicateur est à "1", on somme au résultat le multiplicande en lui rajoutant i bit(s) vers la gauche. </li>
+        <li> Si le bit à la position i du multiplicateur est à "0", on ajoute rien. </li>
+    </ul>
+</p>
+
+<h4>Exemples</h4>
+<table cellspacing="0" cellpadding="0">
+    <tr align="right" valign="top">
+        <td rowspan="6">00101011 &times; 00000101 = 11010111</td>
+        <td rowspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>43<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&times;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>5<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<hr noshade></td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>215<sub>(base 10)</sub></td>
+    </tr>
+</table>
+
+<tr>
+    <td colspan="5">&nbsp;<br>&nbsp;</td>
+</tr>
+
+<table cellspacing="0" cellpadding="0">
+    <tr align="right" valign="top">
+        <td rowspan="6">00110111 &times; 00000011 = 10100101</td>
+        <td rowspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>55<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&times;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>3<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td><em>&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></td>
+        <td>&nbsp;</td><td align="left"><em>mémoriser</em></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;<hr noshade></td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>165<sub>(base 10)</sub></td>
+    </tr>
+</table>
+
+<p><b>Méthode 2 : </b>La multiplication de deux nombres binaires peut être vue comme une addition binaire répétée plusieurs fois.</p>
+<p>Exemples</p>
+<table cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top">
+        <td rowspan="5">00001100 &times; 00000011 = 00011000</td>
+        <td rowspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2*1&nbsp;&nbsp;1</em></td>
+        <td>&nbsp</td><td><em>mémoriser</em></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>12<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>12<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>+&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>12<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>36<sub>(base 10)</sub></td>
+    </tr>
+</table>
+<br>
+
+<h2>La division</h2>
+<p>Nous avons vu que la multiplication en binaire était basée sur une succession d’additions, inversement la division en binaire va être basée sur
+    une succession de soustractions et s’emploie de la même façon qu’une division en décimal.</p>
+
+<p><b>Exemple</b></p>
+<table cellspacing="0" cellpadding="0">
+    <tr align="right" valign="top">
+        <td rowspan="13">00101010 &divide; 00000110 = 00000111</td>
+        <td rowspan="13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td rowspan="2">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td rowspan="2">7<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="9"><hr noshade></td>
+    </tr>
+    <tr align="right" valign="middle">
+        <td>1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;</td>
+        <td><font size="+2">)</font></td>
+        <td>&nbsp;0&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;<strike>1</strike>&nbsp;</td><td><sup><em>1</em></sup>0&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>42<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td rowspan="10">&nbsp;</td><td rowspan="10">&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td>
+        <td rowspan="2">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td rowspan="2">6<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="2">&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp<em>1</em>&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td rowspan="8">&nbsp;</td><td rowspan="8"><em>retenir</em></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td><strike>1</strike>&nbsp;</td><td>&nbsp;<strike>0</strike>&nbsp;</td><td><sup><em>1</em></sup>0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="3">&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="4 ">&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;0&nbsp;</td>
+    </tr>
+</table>
+    <tr>
+        <td colspan="14">&nbsp;<br>&nbsp;</td>
+    </tr>
+<table cellspacing="0" cellpadding="0">
+    <tr align="right" valign="top">
+        <td rowspan="18">10000111 &divide; 00000101 = 00011011</td>
+        <td rowspan="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td rowspan="2">&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td rowspan="2">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td rowspan="2">27<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="9"><hr noshade></td>
+    </tr>
+    <tr align="right" valign="middle">
+        <td>1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;</td>
+        <td><font size="+2">)</font></td>
+        <td>&nbsp;<strike>1</strike>&nbsp;</td><td>&nbsp;<strike>0</strike>&nbsp;</td><td>&nbsp;<strike>0</strike>&nbsp;</td><td><sup><em>1</em></sup>0&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>135<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td rowspan="15">&nbsp;</td>
+        <td rowspan="15">&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td rowspan="15">&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td rowspan="15">5<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="4"><hr noshade></td>
+        <td colspan="4">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;<strike>1</strike>&nbsp;</td><td><sup><em>1</em></sup>0&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+        <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;</td><td>&nbsp;0&nbsp;</td>
+        <td>&nbsp;</td><td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="3">&nbsp;</td>
+        <td colspan="3"><hr noshade></td>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="3">&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>-&nbsp;&nbsp;</td><td>&nbsp;1&nbsp;</td><td>&nbsp;0&nbsp;</td><td>&nbsp;1&nbsp;</td>
+    </tr>
+    <tr align="right" valign="top">
+        <td colspan="4">&nbsp;</td>
+        <td colspan="4"><hr noshade></td>
+    </tr>
+    <tr align="right" valign="top">
+        <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        <td>&nbsp;0&nbsp;</td>
+    </tr>
+</table>
+
+<hr class="hr-course">
+<div style="text-align: center;">
+    <button type="button" class="btn btn-default" id="btn-binmultdiv-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binmultdiv-back">
+        <img src="images/btn-icon-back.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binmultdiv-next">
+        <img src="images/btn-icon-next.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binmultdiv-quiz">
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+</div>
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>
+
+
+

@@ -1,0 +1,45 @@
+<div class="modal fade modal-mid-size" id="createAccount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog  modal-form-login" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="description">
+                    <p>
+                        <div class="form-title">Créer un compte</div>
+                        <div class="form-subtitle">Créer-vous un compte Bit<span style="color:red;">a</span>Bit</div>
+                    </p>
+                </div>
+            </div>
+
+
+            <form role="form" action="" method="post" class="login-form">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Pseudo</span>
+                        <label class="sr-only" for="usernameCreate">Pseudo</label>
+                        <input class= "form-control center-form-input modal-input-bitabit" type="text" name="form-username" placeholder="Entrez votre pseudo" class="form-username form-control" id="usernameCreate">
+                    </div>
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Mot de passe</span>
+                        <label class="sr-only" for="passwordCreate">Mot de passe</label>
+                        <input class= "form-control center-form-input" type="password" name="form-password" placeholder="Entrez votre mot de passe" class="form-password form-control" id="passwordCreate">
+                    </div>
+                    <div class="form-group">
+                        <span class="center-form-label input-group-addon alert-info">Mot de passe</span>
+                        <label class="sr-only" for="passwordAgainCreate">Mot de passe</label>
+                        <input class= "form-control center-form-input" type="password" name="form-password" placeholder="Repétez votre mot de passe" class="form-password form-control" id="passwordAgainCreate">
+                    </div>
+                </div>
+
+                <div id="alert-create"></div>
+
+
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Effacer</button>
+                <button type="button" class="btn btn-primary" id="create-account-btn">Créer</button>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,103 @@
+
+<div id = "background-image2"></div>
+
+
+<div class = "row game-two-infos">
+
+    <div class="color-info">
+        <h3>Rappel code couleur</h3>
+        <div class = "game-info-div">
+            <p>
+                Les couleurs peuvent être représentées par différents codages.
+                Un premier est le codage RGB qui à une couleur associe une nuance de rouge, une nuance de vert et une de bleu.
+                Ces nuances sont des entiers pouvant aller de 0 à 255 en valeurs décimales.
+                L'association de ces trois nuances permet la formation d'une couleur.
+                Une autre représentation de ces couleurs peut être un entier hexadécimal composé de 6 chiffres.
+            </p>
+        </div>
+    </div>
+
+    <div class="game-rules-info">
+        <h3>Règles du jeu</h3>
+
+        <div class = "game-info-div">
+            <p>
+                Le but du jeu est de voir l'utilisation du binaire et de l'hexadécimal dans le codage des couleurs.
+                Les règles sont les suivantes :
+                A partir du codage décimal RGB de la couleur, il faut retrouver le codage hexadécimal.
+                Un codage hexadécimal est constitué d'un # suivi de 6 chiffres hexadécimaux.</br>
+                Exemple : #ABCDEF </br>
+                Les deux premiers chiffres représentent la nuance de rouge allant jusqu'à 255 en décimal, les
+                deux chiffres suivant la nuance de vert et les deux derniers chiffres la nuance de bleu.</br>
+                <span class = "warning"> Attention un chiffre héxadécimal X compris entre 0 et F
+                s'écrira ici 0X (0 suivi du chiffre)</span>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="row game-two-content">
+
+    <div class = "color-pb-div">
+        <div id = "game-main-color-rdm" class = "game-main-color"></div>
+
+        <table class="table borderless text-center" id="color-content">
+            </tbody>
+                <tr class = "game-sub-colors">
+                    <td><div class = "game-red-color"></div></td>
+                    <td><div class = "game-green-color"></div></td>
+                    <td><div class = "game-blue-color"></div></td>
+                </tr>
+                <tr class = "game-sub-colors-val">
+                    <td><div class = "game-red-color-val"></div></td>
+                    <td><div class = "game-green-color-val"></div></td>
+                    <td><div class = "game-blue-color-val"></div></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class = "color-answer-div">
+            <div id = "game-main-color-user" class = "game-main-color"></div>
+            <div class = "user-main-color-val">
+                <input id = "color-answer" class = "color-answer-input" type="text" name="proposal" value="#" maxlength="7"/>
+            </div>
+
+            <div class = "user-answer-color-help">
+                <span data-tip="Rentrer une réponse dans le champ texte &#013;
+                et cliquer n'importe où sur l'écran pour vérifier">
+                    <button id="btn-hint" class="btn btnIconLittle">
+                        <img src="images/icon-help-2.png" class="imgIconLittle" />
+                    </button>
+                </span>
+            </div>
+    </div>
+
+    <div id = "color-time-area" class="color-time-area">
+        <h4>Temps écoulé</h4>
+        <div id = "color-time-div"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

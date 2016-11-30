@@ -1,0 +1,30 @@
+{
+  "name": "BitABit",
+  "description": "Petite appli de test d'orthographe pour les geeks",
+  "main": "index.js",
+  "authors": [
+    "Ngoc Bich Nguyen <nguyenntngocbich@gmail.com>",
+    "Jules Sauvinet <jules.sauvinet@etu.univ-lyon1.fr>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.0",
+    "moment": "^2.13.0",
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6",
+    "underscore": "^1.8.3",
+    "text": "^2.0.15",
+    "backbone": "latest",
+    "five-star-rating": "^1.0.0"
+  }
+}

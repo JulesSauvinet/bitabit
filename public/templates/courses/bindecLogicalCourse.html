@@ -1,0 +1,332 @@
+
+<a name="topBinLog"></a>
+<div id ="bindeclog" class ="transparent-course-name"></div>
+
+<h1><span class="mtxt">Le binaire et les opérateurs logiques</span></h1>
+<h2>La fonction ET</h2>
+<p>
+    La fonction <b>ET</b> (<i>AND</i> en anglais) est un opérateur logique de l'algèbre de Boole.
+    À deux opérandes, qui peuvent avoir chacun la valeur VRAI ou FAUX, l'opérateur associe un résultat qui a la valeur VRAI si et seulement si les deux opérandes ont la valeur VRAI.
+</p>
+<div align="center">
+    <table CELLSPACING="0" BORDER="0" CELLPADDING="4" WIDTH="647">
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole :
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole ANSI:
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Table de vérité :
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <!--img src="images/logical-AND-symb.png" class="imgIcon" /-->
+                    <img border="0" src="images/logical-AND-symb.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <img border="0" src="images/logical-AND.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="middle">
+                <div align="center">
+                    <table border="1" cellspacing="0" width="150" align="right">
+                        <tr style="background:#b3e2d1;text-align:center">
+                            <td colspan="2">Entrées</td>
+                            <td>Sortie</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td><b>a</b></td>
+                            <td><b>b</b></td>
+                            <td><b>L</b></td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h2>La fonction OR</h2>
+<p>La fonction <b>OU</b> ou OU inclusif (<i>OR</i> en anglais) est un opérateur logique de l'algèbre de Boole.
+    À deux opérandes, qui peuvent avoir chacun la valeur VRAI ou FAUX, l'opérateur associe un résultat qui a la valeur VRAI
+    si et seulement si au moins un des deux opérandes a la valeur VRAI.
+</p>
+<div align="center">
+    <table CELLSPACING="0" BORDER="0" CELLPADDING="4" WIDTH="647">
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole :
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole ANSI:
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Table de vérité :
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <!--img src="images/logical-AND-symb.png" class="imgIcon" /-->
+                    <img border="0" src="images/logical-OR-symb.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <img border="0" src="images/logical-OR.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="middle">
+                <div align="center">
+                    <table border="1" cellspacing="0" width="150" align="right">
+                        <tr style="background:#b3e2d1;text-align:center">
+                            <td colspan="2">Entrées</td>
+                            <td>Sortie</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td><b>a</b></td>
+                            <td><b>b</b></td>
+                            <td><b>L</b></td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h2>La fonction XOR</h2>
+<div id="XOR">
+    <p>La fonction <b>OU exclusif</b>, souvent appelée XOR (eXclusive OR) ou disjonction exclusive, ou encore ⊽ en algèbre relationnelle, est un opérateur logique de l'algèbre de Boole.
+        À deux opérandes, qui peuvent avoir chacun la valeur VRAI ou FAUX, l'opérateur associe un résultat qui a la valeur VRAI
+        si et seulement si les deux opérandes ont des valeurs distinctes.</p>
+
+    <p>Cet opérateur est très utilisé en électronique, en informatique, et aussi en cryptographie du
+        fait de ses propriétés intéressantes. Son symbole est traditionnellement un signe "PLUS" dans un cercle : « ⊕ ».
+    </p>
+    <div align="center">
+        <table CELLSPACING="0" BORDER="0" CELLPADDING="4" WIDTH="647">
+            <tr>
+                <td WIDTH="33%" VALIGN="TOP">
+                    <p ALIGN="center">
+                        Symbole :
+                    </p>
+                </td>
+                <td WIDTH="33%" VALIGN="TOP">
+                    <p ALIGN="center">
+                        Symbole ANSI:
+                    </p>
+                </td>
+                <td WIDTH="33%" VALIGN="TOP">
+                    <p ALIGN="center">
+                        Table de vérité :
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td WIDTH="33%" VALIGN="TOP">
+                    <p ALIGN="CENTER">
+                    <p ALIGN="CENTER">
+                        <!--img src="images/logical-AND-symb.png" class="imgIcon" /-->
+                        <img border="0" src="images/logical-XOR-symb.png" width="131" height="88"/>
+                </td>
+                <td WIDTH="33%" VALIGN="TOP">
+                    <p ALIGN="CENTER">
+                    <p ALIGN="CENTER">
+                        <img border="0" src="images/logical-XOR.png" width="131" height="88"/>
+                </td>
+                <td WIDTH="33%" VALIGN="middle">
+                    <div align="center">
+                        <table border="1" cellspacing="0" width="150" align="right">
+                            <tr style="background:#b3e2d1;text-align:center">
+                                <td colspan="2">Entrées</td>
+                                <td>Sortie</td>
+                            </tr>
+                            <tr style="text-align:center">
+                                <td><b>a</b></td>
+                                <td><b>b</b></td>
+                                <td><b>R = A ⊕ B</b></td>
+                            </tr>
+                            <tr style="text-align:center">
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr style="text-align:center">
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr style="text-align:center">
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr style="text-align:center">
+                                <td>1</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<h2>La fonction NOT</h2>
+<div>
+    <p>
+        La fonction <b>NON</b> (NOT en anglais) est un opérateur logique de l'algèbre de Boole.
+        À un opérande, qui peut avoir la valeur VRAI ou FAUX, l'opérateur associe un résultat qui a une valeur
+        inverse de celle de l'opérande. Le circuit intégré 7404 intègre six portes logiques inverseuses du type NON.
+    </p>
+</div>
+<div align="center">
+    <table CELLSPACING="0" BORDER="0" CELLPADDING="4" WIDTH="647">
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole :
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Symbole ANSI:
+                </p>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="center">
+                    Table de vérité :
+                </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <!--img src="images/logical-AND-symb.png" class="imgIcon" /-->
+                    <img border="0" src="images/logical-NOT-symb.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="TOP">
+                <p ALIGN="CENTER">
+                <p ALIGN="CENTER">
+                    <img border="0" src="images/logical-NOT.png" width="131" height="88"/>
+            </td>
+            <td WIDTH="33%" VALIGN="middle">
+                <div align="center">
+                    <table border="1" cellspacing="0" width="150" align="right">
+                        <tr style="background:#b3e2d1;text-align:center">
+                            <td>Entrées</td>
+                            <td>Sortie</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td><b>a</b></td>
+                            <td><b>L</b></td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr style="text-align:center">
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<hr class="hr-course">
+<div style="text-align: center;">
+    <button type="button" class="btn btn-default" id="btn-binlog-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binlog-back">
+        <img src="images/btn-icon-back.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binlog-next">
+        <img src="images/btn-icon-next.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binlog-quiz">
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+</div>
+
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>
+
+

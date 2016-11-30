@@ -1,0 +1,110 @@
+<a name="topBinDec"></a>
+<div id ="bindectrans" class ="transparent-course-name"></div>
+
+<h1><span class="mtxt">Le codage binaire</span></h1>
+
+<p>
+    Dans le monde électrique, le langage de machine ne se compose que de 2 chiffres <b>0</b> et <b>1</b>.
+    Ceux-ci représente 2 états électriques : <b>non</b> et <b>oui</b>. Et ça, c’est ce que l'on appelle le <b>codage binaire</b>.
+</p>
+
+<p>
+    Dans la vie quotidienne, nous utilisons le système décimal qui va de <b>0</b> à <b>9</b> pour compter.
+    Cependant, en travaillant avec le langage des machines, nous comptons en binaire, c’est-à-dire nous n'utiliserons que des <b>0</b> et <b>1</b>.
+</p>
+
+<table class="tablo">
+    <tr class="blue">
+        <td style="width:30%;">Base, b</td>
+        <td style="width:30%;">Octet (8-bits)</td>
+        <td style="width:60%;">Mot (16-bits)</td>
+    </tr>
+    <tr>
+        <td>Binaire</td>
+        <td><span class="ntxt"> de <b>0000 0000</b><sub>2</sub> à <b>1111 1111</b><sub>2</sub></span></td>
+        <td><span class="ntxt"> de <b>0000 0000 0000 0000</b><sub>2</sub> à <b>1111 1111 1111 1111</b><sub>2</sub></span></td>
+    </tr>
+    <tr>
+        <td>Décimal</td>
+        <td><span class="ptxt"> de <b>0</b><sub>10</sub> à <b>255</b><sub>10</sub></span></td>
+        <td><span class="ptxt"> de <b>0</b><sub>10</sub> à <b>65,535</b><sub>10</sub></span></td>
+    </tr>
+</table>
+
+<h4>Convertir de décimal en binaire</h4>
+<p>
+    Nous allons convertir le nombre 167<sub>10</sub> en nombre binaire.
+    <ul>
+        <li><b>1- </b>Inscrivez <b>2</b> comme diviseur à droite du nombre de division</li>
+        <li><b>2- </b>Faites les division. Ecrivre la réponse entière sous le diviseur et le reste (0 ou 1) sous la division</li>
+        <li><b>3- </b>Répétez l'étape 2 avec chaque nouveau quotient trouvé jusqu'au quotient est 0</li>
+        <li><b>4- </b>Récupérez le nombre en binaire en commençant par le bas de la liste des restes (la direction de la flèche)</li>
+    </ul>
+    <img src="images/bindec-exemple.png" alt="bindec-exemple" style="width:350px;height:350px;">
+    <p>Vous l'avez compris le nombre "167" en décimal  est égal à "1010 0111" (en binaire).</p>
+</p>
+<h4>Convertir de binaire en décimal</h4>
+<p>
+<ul>
+    <li><b>1- </b>Notez le nombre binaire et listez les puissances de 2 de droite à gauche</li>
+        <p><img src="images/bindec-exemple-0.png" alt="bindec-exemple-0" style="width:300px;height:70px;"></p>
+
+    <li><b>2- </b>Connectez chaque chiffre du nombre binaire à la puissance de deux</li>
+    <li><b>3- </b>Ecrivez la valeur finale de chaque puissance de deux</li>
+    <p><img src="images/bindec-exemple-1.png" alt="bindec-exemple-1" style="width:300px;height:90px;"></p>
+    <li><b>4- </b>Additionnez les valeurs finales</li>
+    <p>128 + 32 + 4 + 2 + 1 = 167</p>
+</ul>
+
+
+    <span class="red">1010 0111</span><sub>(binaire)</sub> = <span class="red">1</span>x2<sup>7</sup> + <span class="red">0</span>x2<sup>6</sup> + <span class="red">1</span>x2<sup>5</sup> + <span class="red">0</span>x2<sup>4</sup> + <span class="red">0</span>x2<sup>3</sup> + <span class="red">1</span>x2<sup>2</sup> + <span class="red">1</span>x2<sup>1</sup> + <span class="red">1</span>x2<sup>0</sup><br />
+    <span class="red">1010 0111</span><sub>(binaire)</sub> = <span class="red">1</span>x2<sup>7</sup> + <span class="red">1</span>x2<sup>5</sup> + <span class="red">1</span>x2<sup>2</sup> + <span class="red">1</span>x2<sup>1</sup> + <span class="red">1</span>x2<sup>0</sup><br />
+    <span class="red">1010 0111</span><sub>(binaire)</sub> = 2<sup>7</sup> + 2<sup>5</sup> + 2<sup>2</sup> + 2<sup>1</sup> + 2<sup>0</sup><br />
+    <span class="red">1010 0111</span><sub>(binaire)</sub> = 128 + 32 + 4 + 2 + 1<br />
+    1010 0111<sub>(binaire)</sub> = 167<sub>(décimal)</sub></p>
+
+<p>Vous l'avez compris le nombre "1010 0111" (en binaire) est égal à "167" en décimal.</p>
+
+<div>
+        <h4>Exemples des conversions</h4>
+        <ul>
+            <li>(10011)<sub>2</sub> = (19)<sub>10</sub></li>
+            <li>(110101)<sub>2</sub> = (53)<sub>10</sub></li>
+            <li>(10001011)<sub>2</sub> = (139)<sub>10</sub></li>
+        </ul>
+        <h4>Tableau de conversion des 16 premiers nombres binaire en décimal</h4>
+
+        <table class="tablo table-course">
+            <tr><th>Binaire</th>
+                <td> 0000 </td><td> 0001 </td><td> 0010 </td><td> 0011 </td><td> 0100 </td><td> 0101 </td><td> 0110 </td><td> 0111 </td><td> 1000 </td><td> 1001 </td><td>1010</td><td>1011</td><td>1100</td><td>1101</td><td>1110</td><td>1111</td>
+            </tr>
+            <tr><th>Décimal</th>
+                <td> 0 </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td><td> 5 </td><td> 6 </td><td> 7 </td><td> 8 </td><td> 9 </td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+            </tr>
+        </table>
+</div>
+
+<hr class="hr-course">
+<div style="text-align: center;">
+    <button type="button" class="btn btn-default" id="btn-bindec-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-bindec-next"> <!--  href="#top"-->
+        <img src="images/btn-icon-next.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-bindec-quiz">
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-bindec-game">
+        <img src="images/btn-icon-game.png" class="imgIcon" />
+    </button>
+</div>
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>

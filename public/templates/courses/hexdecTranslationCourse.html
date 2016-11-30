@@ -1,0 +1,106 @@
+<a name="topHexDec"></a>
+<div id ="hexdectrans" class ="transparent-course-name"></div>
+
+<h1><span class="mtxt">Le codage hexadecimal</span></h1>
+<p>
+    Le codage hexadécimal est un systeme de numération en base 16 permettant de représenter les nombres avec 16 symboles : 10 chiffres (de <span class="ntxt">0</span> à <span class="ntxt">9</span>)
+    et les 6 premières lettres de l'alphabet (de <span class="ntxt">A</span> à <span class="ntxt">F</span>). Ce système de numération est utilisé en informatique, notamment pour coder les couleurs.
+
+    La table de conversion suivante permet de retrouver la valeur décimale associé a chaque symbole hexadécimal.
+</p>
+
+<h3>Table de conversion</h3>
+<div class="halfdiv space-tab" style="text-align: center;">
+    <table class="tablo table-course">
+        <tr><th>Hexadécimal</th>
+            <td> 0 </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td><td> 5 </td><td> 6 </td><td> 7 </td><td> 8 </td><td> 9 </td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td>
+        </tr>
+        <tr><th>Décimal</th>
+            <td> 0 </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td><td> 5 </td><td> 6 </td><td> 7 </td><td> 8 </td><td> 9 </td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+        </tr>
+    </table>
+</div>
+
+<div class = "description-equation" >
+    <hr class="hr-course">
+    <p>
+        Soit A<SUB>n</SUB>A<SUB>n-1</SUB>...A<SUB>1</SUB> un nombre écrit en hexadécimal.    </br>
+        Pour retrouver la valeur décimale X d'un nombre écrit en hexadécimal il faut procéder comme suit :    </br>
+        X = A<SUB>n</SUB>*16<SUP>n-1</SUP>+A<SUB>n-1</SUB>*16<SUP>n-2</SUP>+...+A<SUB>1</SUB>*16<SUP>0</SUP>
+    </p>
+</div>
+
+
+
+
+<div style="text-align: center;">
+    <h2>Exemples</h2>
+    <div class="halfdiv">
+        <h3>De hexadecimal à décimal</h3>
+        <h4>Exemple 1</h4>
+        <ul>
+            <li>7DE est un nombre hexadécimal</li>
+            <li>7DE = (7 * 16<sup>2</sup>) + (13 * 16<sup>1</sup>) + (14 * 16<sup>0</sup>)</li>
+            <li>7DE = (7 * 256) + (13 * 16) + (14 * 1)</li>
+            <li>7DE = 1792 + 208 + 14</li>
+            <li>7DE = 2014 (en decimal)</li>
+        </ul>
+        <h4>Exemple 2</h4>
+        <ul>
+            <li>FB3 est un nombre hexadécimal</li>
+            <li>FB3 = (F * 16<sup>2</sup>) + (B * 16<sup>1</sup>) + (3 * 16<sup>0</sup>)</li>
+            <li>FB3 = (15 * 256) + (11 * 16) + (3 * 1)</li>
+            <li>FB3 = 3840 + 176 + 3</li>
+            <li>FB3 = 4019 (en decimal)</li>
+        </ul>
+    </div>
+    <div class="halfdiv">
+        <h3>De décimal à hexadecimal</h3>
+        <h4>Exemple 3</h4>
+        <ul>
+            <li>27 est un nombre décimal</li>
+            <li>27 = 1*16<sup>1</sup> + 11*16<sup>0</sup></li>
+            <li>27 = 1*16<sup>1</sup> + B*16<sup>0</sup></li>
+            <li>27 = 1B (en hexadécimal)</li>
+        </ul>
+        <h4>Autres exemples</h4>
+        <ul>
+            <li>(1D9)<sub>16</sub> = (473)<sub>10</sub></li>
+            <li>(80E1)<sub>16</sub> = (32993)<sub>10</sub></li>
+            <li>(10CE)<sub>16</sub> = (4302)<sub>10</sub></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class = "bottom-course-space" style="text-align: center;">
+    <hr class="hr-course">
+    <button type="button" class="btn btn-default" id="btn-hexdec-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-back">
+        <img src="images/btn-icon-back.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-next">
+        <img src="images/btn-icon-next.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-game">
+        <img src="images/btn-icon-game.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-quiz"> <!--  href="#top"-->
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+</div>
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>
+
+
+
+

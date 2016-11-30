@@ -1,0 +1,155 @@
+<a name="topBinSumSub"></a>
+<div id ="bindecss" class ="transparent-course-name"></div>
+
+<h1>L'addition et la soustraction en binaire</h1>
+
+<h2>L'addition</h2>
+<p>L'addion des nombres binaires s'effectue de la même manière que l'addition en décimal. Elle se résume par la table suivante :
+    <ul>
+        <li>0 + 0 = 0</li>
+        <li>0 + 1 = 1</li>
+        <li>1 + 0 = 1</li>
+        <li>1 + 1 = 10 (on pose <b>0</b> et retient <b>1</b>)</li>
+    </ul>
+</p>
+<p>Exemples</p>
+<table cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top">
+        <td rowspan="4">00110100 + 00010111 = 01001011</td>
+        <td rowspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</em></td>
+        <td>&nbsp;</td><td><em>retenues</em></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>52<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>+&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;1<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>23<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>75<sub>(base 10)</sub></td>
+    </tr>
+
+</table>
+<tr>
+    <td colspan="5">&nbsp;<br>&nbsp;</td>
+</tr>
+<table cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top">
+        <td rowspan="4">00010011 + 00011010 = 00101101</td>
+        <td rowspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</em></td>
+        <td>&nbsp</td><td><em>retenues</em></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>19<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>+&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>26<sub>(base 10)</sub></td>
+    </tr>
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>45<sub>(base 10)</sub></td>
+    </tr>
+</table>
+<p><b>Note : </b>On ne représente que des nombres positifs.</p>
+
+<h2>La soustraction</h2>
+<p>
+    Comme vous l'avez vu dans le cas du système décimal, la soustraction en binaire est également basée sur la notion de retenue.
+    Cependant, dans le système binaire, il n'y a que deux chiffres dont le plus grand est 1.
+    Ainsi, seulement quatre règles sont nécessaires pour effectuer rigoureusement la soustraction en binaire :
+<ul>
+    <li>0 - 0 = 0</li>
+    <li>0 - 1 = 1 (on retient <b>1</b>)</li>
+    <li>1 - 0 = 1</li>
+    <li>1 - 1 = 0</li>
+</ul>
+</p>
+<p>Exemples</p>
+
+<table cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top">
+        <td rowspan="4">00100101 - 00010101 = 000010000</td>
+        <td rowspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</em></td>
+        <td>&nbsp;</td><td><em>retenues</em></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;<strike>1</strike>&nbsp;<sup><em>1</em></sup>0&nbsp;&nbsp;0 &nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>37<sub>(base 10)</sub></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>-&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1&nbsp;&nbsp;0&nbsp;&nbsp;1<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>21<sub>(base 10)</sub></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;<sup>&nbsp;</sup>1&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>16<sub>(base 10)</sub></td>
+    </tr>
+</table>
+    <tr>
+        <td colspan="5">&nbsp;<br>&nbsp;</td>
+    </tr>
+<table cellspacing="0" cellpadding="0">
+    <tr align="left" valign="top">
+        <td rowspan="4">00110011 - 00010110 = 00011101</td>
+        <td rowspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;<sup>1</sup>0&nbsp;&nbsp;1</em></td>
+        <td>&nbsp;</td><td><em>retenues</em></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;<strike>1</strike>&nbsp;<sup>&nbsp;</sup><strike>1</strike>&nbsp;&nbsp;<strike>0</strike>&nbsp;<sup><em>1</em></sup>0&nbsp;&nbsp;1&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>51<sub>(base 10)</sub></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>-&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;<sup>&nbsp;</sup>1&nbsp;&nbsp;0&nbsp;<sup>&nbsp;</sup>1&nbsp;&nbsp;1&nbsp;&nbsp;0<hr noshade></td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>22<sub>(base 10)</sub></td>
+    </tr>
+
+    <tr align="left" valign="top">
+        <td>&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;<sup>&nbsp;</sup>1&nbsp;&nbsp;1&nbsp;<sup>&nbsp;</sup>1&nbsp;&nbsp;0&nbsp;&nbsp;1</td>
+        <td>&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;</td><td>29<sub>(base 10)</sub></td>
+    </tr>
+</table>
+
+<hr class="hr-course">
+<div style="text-align: center;">
+    <button type="button" class="btn btn-default" id="btn-binsumsub-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-sumsub-back">
+        <img src="images/btn-icon-back.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binsumsub-next">
+        <img src="images/btn-icon-next.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-binsumsub-quiz">
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+</div>
+
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>
+
+
+
+
+

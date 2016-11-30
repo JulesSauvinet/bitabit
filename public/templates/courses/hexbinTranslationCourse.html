@@ -1,0 +1,128 @@
+<a name="topHexBin"></a>
+<div id ="hexbintrans" class ="transparent-course-name"></div>
+
+<h1><span class="mtxt">Le codage hexadecimal et le binaire</span></h1>
+<p>La table de conversion suivante permet de retrouver la valeur hexadécimale associée à chaque symbole binaire.</p>
+<h3>Table de conversion</h3>
+<div style="text-align: center;">
+    <table class="tablo table-course">
+        <tr><th>Hexadécimal</th>
+            <td> 0 </td><td> 1 </td><td> 2 </td><td> 3 </td><td> 4 </td><td> 5 </td><td> 6 </td><td> 7 </td><td> 8 </td><td> 9 </td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td>
+        </tr>
+        <tr><th>Binaire</th>
+            <td> 0000 </td><td> 0001 </td><td> 0010 </td><td> 0011 </td><td> 0100 </td><td> 0101 </td><td> 0110 </td><td> 0111 </td><td> 1000 </td><td> 1001 </td><td>1010</td><td>1011</td><td>1100</td><td>1101</td><td>1110</td><td>1111</td>
+        </tr>
+    </table>
+</div>
+    <hr class="hr-course">
+    <div id="conversionBinHex">
+        <h3>Convertir du binaire en hexadécimal</h3>
+        À l'aide du tableau précédent, il est beaucoup plus facile de faire une conversion binaire en hexadécimal qu'en décimal.
+        <h5>Étape 1 : Prendre des paquets de 4 bits</h5>
+            <p>Dans cette première étape, on prend des regroupements de 4 bits. Précisément :</p>
+            <p>Lorsque nous avons moins de 4 bits, nous rajoutons des zéros devant pour atteindre le nombre de 4 bits voulu.
+                Voici des exemples concrets pour bien vous expliquer ce que cela signifie :</p>
+                <ul>
+                    <li>1<sub>(binaire)</sub> = <b>000</b>1</li>
+                    <li>101<sub>(binaire)</sub> = <b>0</b>101</li>
+                </ul>
+
+            <p>Lorsque nous avons plus de 4 bits, alors nous mettons des espaces pour séparer tous les paquets
+                de 4 bits (n'oubliez pas de rajouter des zéros s'il le faut).</p>
+                <ul>
+                    <li>10011011<sub>(binaire)</sub> = 1001 1011</li>
+                    <li>111001<sub>(binaire)</sub> = <b>00</b>11 1001</li>
+                </ul>
+            <p>
+                Comme pour l'exemple précédent, il faut mettre des espaces pour faciliter la lecture et le calcul à venir.
+            </p>
+                <ul>
+                    <li>1110101110011011<sub>(binaire)</sub> = 1110 1011 1001 1011</li>
+                </ul>
+
+        <h5>Étape 2 : Se reporter au tableau de conversion binaire-hexadécimal</h5>
+        <p>
+            Dans la deuxième étape, on prend chaque regroupement de 4 bits et faire la correspondance entre le binaire et l'hexadécimal.
+        </p>
+        <h5>Exemples</h5>
+        <ul>
+            <li>0001<sub>(binaire)</sub> = 1<sub>(hexa)</sub></li>
+            <li>0110<sub>(binaire)</sub> = 6<sub>(hexa)</sub></li>
+            <li>1011<sub>(binaire)</sub> = B<sub>(hexa)</sub></li>
+        </ul>
+        <ul>
+            <li>10<sub>(binaire)</sub> = <b>00</b>10<sub>(binaire)</sub> = 2<sub>(hexa)</sub></li>
+            <li>110<sub>(binaire)</sub> = <b>0</b>110<sub>(binaire)</sub> = 6<sub>(hexa)</sub></li>
+        </ul>
+        <ul>
+            <li>1011 1001 0011<sub>(binaire)</sub> = B93<sub>(hexa)</sub><br />
+                <ul>Explication :
+                    <li>1011<sub>(binaire)</sub> = B<sub>(hexa)</sub></li>
+                    <li>1001<sub>(binaire)</sub> = 9<sub>(hexa)</sub></li>
+                    <li>0011<sub>(binaire)</sub> = 3<sub>(hexa)</sub></li>
+                </ul></li>
+
+        </ul>
+
+    </div>
+<hr class="hr-course">
+    <div id="conversionHexBin">
+        <h3>Convertir du hexadécimal en binaire</h3>
+            Pour faire une conversion facile vous pouvez convertir facilement en utilisant le tableau de conversion binaire-hexadécimal.
+            <h5>Exemple 1</h5>
+            <ul>
+                <li>1<sub>(hexa)</sub> = 0001<sub>(binaire)</sub></li>
+                <li>6<sub>(hexa)</sub> = 0110<sub>(binaire)</sub></li>
+                <li>B<sub>(hexa)</sub> = 1011<sub>(binaire)</sub></li>
+            </ul>
+
+            <h5>Exemple 2</h5>
+            <ul>
+                <li>AB<sub>(hexa)</sub> : A=1010 et B=1011 donc :<br />
+                    AB<sub>(hexa)</sub> = 1010 1011<sub>(binaire)</sub></li>
+                <li>11<sub>(hexa)</sub> = 0001 0001<sub>(binaire)</sub></li>
+                <li>80<sub>(hexa)</sub> = 1000 0000<sub>(binaire)</sub></li>
+                <li>FF<sub>(hexa)</sub> = 1111 1111<sub>(binaire)</sub></li>
+            </ul>
+
+            <h5>Exemple 2</h5>
+            <ul>
+                <li>B931<sub>(hexa)</sub> = 1011 1001 0011 0001<sub>(binaire)</sub><br />
+                    <span class="souligne">Explication :</span>
+                    <ul>
+                        <li>B<sub>(hexa)</sub> = 1011<sub>(binaire)</sub></li>
+                        <li>9<sub>(hexa)</sub> = 1001<sub>(binaire)</sub></li>
+                        <li>3<sub>(hexa)</sub> = 0011<sub>(binaire)</sub></li>
+                        <li>1<sub>(hexa)</sub> = 0001<sub>(binaire)</sub></li>
+                    </ul></li>
+            </ul>
+    </div>
+	
+<hr class="hr-course">
+<div style="text-align: center;">
+    <button type="button" class="btn btn-default" id="btn-hexbin-up"> <!--  href="#top"-->
+        <img src="images/btn-icon-up.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-back">
+        <img src="images/btn-icon-back.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-home">
+        <img src="images/btn-icon-home.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexdec-game">
+        <img src="images/btn-icon-game.png" class="imgIcon" />
+    </button>
+    <button type="button" class="btn btn-default" id="btn-hexbin-quiz">
+        <img src="images/btn-icon-quiz.png" class="imgIcon" />
+    </button>
+</div>
+
+<div style="text-align: center;" class="rate">
+    <ul class="total-rating">
+        Total: &nbsp;&nbsp; <span class="avgRating"> 3.5</span>/5&nbsp;(<span class="totalRatings">20 000</span>)&nbsp;<li class="c-rating__item is-active"></li>
+    </ul>
+    <ul class="c-rating">Evaluer le cours: &nbsp;&nbsp;</ul>
+</div>
+
+
+

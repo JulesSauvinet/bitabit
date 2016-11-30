@@ -1,0 +1,96 @@
+
+<div class="container" id="firstGame" style="width:100%;">
+
+        <div class="row ascii-container">
+                    <div class="text-left">
+                        <h3 id = "ascii-table-title">Ascii Table</h3>
+                    </div>
+                    <table class="table table-condensed table-bordered table-responsive text-center" id="ascii-table">
+                        <thead>
+                            <tr>
+                                <th class="col-sm-1">LettreMaj</th>
+                                <th class="col-sm-1">Code</th>
+                                <th class="col-sm-1">LettreMin</th>
+                                <th class="col-sm-1">Code</th>
+                            </tr>
+                        </thead>
+                        <tbody class = "content" id ="table-content">
+                        </tbody>
+                    </table>
+
+        </div>
+
+        <div class="row game-content">
+
+                <table class="table condensed table-condensed2 borderless text-center" id="message-content">
+<!--                    </tbody> class = "tbody-condensed">-->
+                    <tbody>
+                            <tr class = "word-to-solve"></tr>
+                            <tr class = "user-proposal"></tr>
+                            <tr class = "user-response"></tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <div class="game-rules-info">
+                    <h3>Règles du jeu</h3>
+                    <div class = "game-info-div">
+                        <p>
+                            Le but du jeu est de décoder le message caché derrière les différents nombres codés en binaire. Il faut tout d'abord
+                            traduire le binaire en décimal, puis se référer à la table ASCII à gauche afin d'associer au nombre décimal la lettre correspondante.
+                            A chaque encadré noir représentant un mot codé en binaire, il faut associer une lettre de l'alphabet à rentrer dans le
+                            champ texte situé en dessous. Quand vous avez saisi TOUS les champs, vérifier votre réponse en cliquant sur le bouton
+                            de validation vert. Vous avez trois vies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ascii-info">
+                    <h3>Rappel code ASCII</h3>
+                    <div class = "game-info-div">
+                        <p>
+                            Le codage des caractères est une convention qui permet, à travers un codage connu de tous,
+                            de transmettre de l'information textuelle,là où aucun support ne permet l'écriture scripturale.
+                            Le code ASCII permet d'associer à chaque caractère un nombre.
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="row time-check" >
+                <table class="table condensed table-condensed2 borderless text-center" id="checking">
+                    <tbody>
+                            <tr class = "hint">
+                                <td class="col-sm-1">
+                                    <button id="btn-hint" class="btn btnIconLittle">
+                                        <img src="images/icon_help.png" class="imgIconLittle" />
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class = "word-checking">
+                                <td class="col-sm-1">
+                                    <button id="btn-check-answer" class="btn btnIconLittle">
+                                        <img src="images/icon-check.png" class="imgIconLittle" />
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-sm-1 cos-sm-plus">
+                                    <h4 class = "center-title">Nouveau jeu</h4>
+                                    <button id="btn-reload-game" class="btn btnIconLittle">
+                                        <img src="images/reload.png" class="imgIconLittle" />
+                                    </button>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <div id = "color-time-area2" class="color-time-area">
+                    <h4>Temps écoulé</h4>
+                    <div id = "color-time-div"></div>
+                </div>
+        </div>
+
+</div>
