@@ -1,6 +1,6 @@
-*************************************************************
-**								BITABIT 1.0								               **
-**																		                     **       
+**
+**								BITABIT 1.0								               
+**																		                          
 **	 Logiciel éducatif de type EIAH fait dans le cadre de l'UE MIF22	 
 **	 UNIVERSITE CLAUDE BERNARD LYON I        							
 **									    								 
@@ -10,20 +10,19 @@
 **																		 
 **	12 juin 2016														 
 **																		 
-**	l'URL DE L'APPLI EST A l'ADRESSE bitabit.julessauvinet.fr			      **
-**																		                                  **
-**																		                                  **
-**	Sinon, c'est une application node.									                **
-**	Pour la lancer, il faut avoir installé node, npm et bower.			    **
-**																		                                  **
-**	Ensuite, il faut lancer en commande :								                **
-**				-> npm install											                          **
-**				-> bower install										                          **
-**				-> node server.js  (a la racine du projet)				            **
-**																		                                  **
-**																		                                  **
-**	Puis il faut aller à l'URL localhost:3000 dans votre 				        **
-**	navigateur préféré.													                        **
-**																 		                                  **
-**																		                                  **
-**************************************************************************
+**	l'URL DE L'APPLI EST A l'ADRESSE bitabit.julessauvinet.fr			     
+**																		                                 
+**																		                                  
+**	Sinon, c'est une application node.									                
+**	Pour la lancer, il faut avoir installé node, npm et bower.			    
+**																		                                  
+**	Ensuite, il faut lancer en commande :								                
+**				-> npm install											                          
+**				-> bower install										                          
+**				-> node server.js  (a la racine du projet)				            
+**																		                                  
+**																		                                 
+**	Puis il faut aller à l'URL localhost:3000 dans votre 				       
+**	navigateur préféré.													                       
+**																 		                               
+**
